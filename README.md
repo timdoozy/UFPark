@@ -1,3 +1,7 @@
+# UFPark HCI Group 1
+## Timothy Hinds, X, X, X
+
+
 # MERN-boilerplate
 
 This is a boilerplate project using the following technologies:
