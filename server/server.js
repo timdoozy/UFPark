@@ -14,11 +14,12 @@ const isDev = process.env.NODE_ENV !== 'production';
 const port  = process.env.PORT || 8080;
 
 
+
 // Configuration
 // ================================================================================================
 
 // Set up Mongoose
-mongoose.connect(isDev ? config.db_dev : config.db);
+mongoose.connect(isDev ? config.db_dev : config.db, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 
 const app = express();
