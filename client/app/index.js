@@ -13,6 +13,8 @@ import NotFound from './components/App/NotFound';
 
 import Home from './components/Home/Home';
 
+import Settings from './components/Settings/Settings';
+
 import HelloWorld from './components/HelloWorld/HelloWorld';
 
 import './styles/styles.scss';

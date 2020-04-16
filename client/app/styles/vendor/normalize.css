@@ -81,6 +81,90 @@ template, /* 1 */
   display: none;
 }
 
+.settings {
+  position: fixed;
+  padding-top: 12.5%;
+  justify-content: center;
+  align-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.settings-header {
+  padding-bottom: 5%;
+}
+
+.settings-content {
+  background-color: #EFEFD0;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.settings-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Rockwell;
+}
+
+.exitSettings {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  display: inline;
+  float: right;
+}
+
+.exitSettings:hover,
+.exitSettings:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.settingsTitle {
+  display: inline;
+  font-family: Rockwell;
+}
+
+.decals,
+.startpage {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+.fullLots,
+.darkMode {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+
+#fullLotsButton,
+#darkModeButton {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-content: center;
+  display: inline-block;
+  width: 35%;
+}
+
+.react-switch {
+  justify-content: right;
+}
+
 /* Links
    ========================================================================== */
 
@@ -258,8 +342,8 @@ button,
 input,
 select,
 textarea {
-  font: inherit; /* 1 */
-  margin: 0; /* 2 */
+  font: inherit;
+  margin: 0;
 }
 
 /**

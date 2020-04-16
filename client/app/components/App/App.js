@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Settings from '../Settings/Settings';
 
 const App = ({ children }) => (
   <>
@@ -12,6 +13,8 @@ const App = ({ children }) => (
     </main>
 
     <Footer />
+
+    <Settings />
   </>
 );
 
