@@ -35,7 +35,7 @@ function MapView () {
                         />
                     </div>
                     <div id="mapElement">
-                        <Map google={google} zoom={13.5} initialCenter={defaultCoordinates.center} style={style}>
+                        <Map google={google} zoom={14} initialCenter={defaultCoordinates.center} style={style}>
                         </Map>
                     </div>
                     <div id="footerWrapper">
