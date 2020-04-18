@@ -16,7 +16,7 @@ function MapView () {
             key: 'norman-garage',
             value: 'Norman Garage',
             lat: 29.645,
-            lng: -82.338
+            lng: -82.338,
         },
         {
             key: 'beaty-towers',
@@ -181,5 +181,5 @@ function MapView () {
 }
 
 export default GoogleApiWrapper({
-    apiKey: ("AIzaSyDzjKdRoiTMGMEU_W6LmzZPQEVL6GR9ejI")
+    apiKey: ("Google Map")
 })(MapView)
