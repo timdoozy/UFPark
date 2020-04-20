@@ -10,9 +10,9 @@ const Header = () => (
       <Link to="/helloworld">Hello World</Link>
     </nav>
 
-    {/* <nav>
+    <nav>
       <Link to="/map">Map</Link>
-    </nav> */}
+    </nav>
 
     <hr />
   </header>
