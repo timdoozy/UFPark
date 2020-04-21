@@ -7,7 +7,7 @@ import ReactSearchBox from 'react-search-box';
 
 function MapView () {
 
-    const style = {width: '100%', height: '500px'}
+    const style = {width: '100%', height: '100%', position: 'relative'}
 
     const [defaultCoordinates, setDefaultCoordinates] = useState({center: {lat: 29.6436, lng: -82.3549}, zoom: 14});
 
@@ -156,5 +156,5 @@ function MapView () {
 }
 
 export default GoogleApiWrapper({
-    apiKey: ("AIzaSyDzjKdRoiTMGMEU_W6LmzZPQEVL6GR9ejI")
+    apiKey: ("")
 })(MapView)
