@@ -12,6 +12,12 @@ module.exports = merge(commonConfig, {
     chunkFilename: '[id].[hash].chunk.js'
   },
 
+  module: {
+    loaders: [
+      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
+    ]
+  },
+
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compressor: {

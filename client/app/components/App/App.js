@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Settings from '../Settings/Settings';
+import MapView from '../Map/MapView';
 
 const App = ({ children }) => (
   <>
@@ -15,6 +16,8 @@ const App = ({ children }) => (
     <Footer />
 
     <Settings />
+
+    <MapView />
   </>
 );
 
