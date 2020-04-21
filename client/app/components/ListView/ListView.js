@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ParkingData from './Parking.json';
-
+import './ListView.css'
 const TableItem = (props) => {
     return(
         <tr>
