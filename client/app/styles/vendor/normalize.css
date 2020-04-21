@@ -107,7 +107,7 @@ template, /* 1 */
 }
 
 #mapElement {
-  height: 500px;
+  height: 600px;
   width: 100%;
   position: relative;
 }
@@ -139,7 +139,11 @@ template, /* 1 */
   overflow: auto;
   background-color: rgba(0,0,0,0.6);
 }
-
+@media (max-width: 1000px) {
+  .settings {
+      padding-top: 40%;
+  }
+}
 .settings-header {
   padding-bottom: 5%;
 }
