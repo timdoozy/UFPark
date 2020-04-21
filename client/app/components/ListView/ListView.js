@@ -316,7 +316,8 @@ constructor(props) {
     this.state={
         decals: props.decals,
         full: props.full,
-        locations: []
+        locations: [],
+        query:""
     }
 }
 
@@ -333,6 +334,9 @@ TableList() {
         .filter((data)=>
             data.availability<this.state.full
         )
+        .filter((data)=>
+             data.lotName.toLowerCase().includes(this.state.query.toLowerCase())
+        )
         .map((data) =>
             <TableItem location={data}/>
         )
@@ -347,9 +351,12 @@ distanceSort(){
 availabilitySort(){
     {this.setState({locations: this.state.locations.sort((a,b)=> a.availability-b.availability)})}
 }
+searchFiltering(event){this.setState({query: event.target.value})}
 render() {
     return (
         <div className="ListView-Tablewrapper">
+            <input className="ListView-filterinput" onChange={(e)=>this.searchFiltering(e)}
+            placeholder="Search for Locations"/>
             <table className="ListView-Table">
                 <tr>
                     <th className="ListView-Header"><button className="ListView-Sort" onClick={()=>this.alphabeticalSort()}>Lot Name &#9660;</button></th>
