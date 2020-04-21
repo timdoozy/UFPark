@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Settings from '../Settings/Settings';
 import { Link } from 'react-router-dom';
 
 const Footer = () => (
@@ -21,9 +21,7 @@ const Footer = () => (
         </nav>
       </div>
       <div id="settingsButton">
-        <nav>
-          <img src="/assets/img/icons8-settings-50.png"/>
-        </nav>
+          <Settings/>
       </div>
     </div>
   </footer>

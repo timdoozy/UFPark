@@ -314,8 +314,8 @@ class ListView extends Component {
 constructor(props) {
     super(props);
     this.state={
-        decals:"Disabled Student",
-        full: 100,
+        decals: props.decals,
+        full: props.full,
         locations: []
     }
 }

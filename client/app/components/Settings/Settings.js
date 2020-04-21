@@ -20,7 +20,7 @@ function Settings () {
     if(openSettings == false)
     {
         return (
-            <button onClick={handleClickOpen}>Settings</button>
+            <button onClick={handleClickOpen} style={{cursor:"pointer", border: "none", background:"none", padding:"0"}}><img src="/assets/img/icons8-settings-50.png"/></button>
         );
     }
     if(openSettings == true)
