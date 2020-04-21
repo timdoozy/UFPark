@@ -188,7 +188,7 @@ const ParkingData =[
             "longitude": -82.35269701
           },
           {
-            "lotName": "Veterinary Small ANimal Hospital-Disabled Parking",
+            "lotName": "Veterinary Small Animal Hospital-Disabled Parking",
             "distance": 5.3,
             "availability": 24,
             "decals": ["All", "Disabled Student", "Disabled Student"],
