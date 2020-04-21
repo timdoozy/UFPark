@@ -43,6 +43,24 @@ summary { /* 1 */
   display: block;
 }
 
+/* Start of Footer Styling */
+
+#footerWrapper {
+  display: flex;
+}
+
+#currentLocationButton,
+#listViewButton,
+#settingsButton {
+  display: flex;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* End of Footer Styling */
+
 /**
  * Add the correct display in IE 9-.
  */
@@ -127,7 +145,7 @@ template, /* 1 */
 }
 
 .settings-content {
-  background-color: #EFEFD0;
+  background-color: #FCECC9;
   display: flex;
   flex-direction: column;
   margin: auto;
