@@ -7,7 +7,7 @@ import ReactSearchBox from 'react-search-box';
 
 function MapView () {
 
-    const style = {width: '100%', height: '100%', position: 'relative'}
+    const style = {width: '100%', height: '500px', position: 'relative'}
 
     const [defaultCoordinates, setDefaultCoordinates] = useState({center: {lat: 29.6436, lng: -82.3549}, zoom: 14});
 
