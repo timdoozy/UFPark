@@ -25,10 +25,9 @@ class Routes extends Component {
             <Router>
                 <App>
                     <Switch>
-                        <Route exact path="/" component={Home}/>
+                        <Route exact path="/" component={Map}/>
                         <Route path="/list" 
                         render={(props) => <List {...props} full={this.state.avail} decals={this.state.decals}/>}/>
-                        <Route path="/map" component={Map}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </App>

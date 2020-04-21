@@ -8,7 +8,7 @@ const Footer = () => (
     <div id="footerWrapper">
       <div id="currentLocationButton">
         <nav>
-          <Link to="/map">
+          <Link to="/">
             <img src="/assets/img/icons8-location-50.png" />
           </Link>
         </nav>
