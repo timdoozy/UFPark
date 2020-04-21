@@ -13,12 +13,9 @@ const App = ({ children }) => (
       {children}
     </main>
 
-    <Footer />
+    <Footer/>
 
     <Settings />
-
-    <MapView />
-    <ListView/>
   </>
 );
 

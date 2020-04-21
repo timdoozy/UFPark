@@ -14,7 +14,11 @@ module.exports = merge(commonConfig, {
 
   module: {
     loaders: [
-      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
+      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      }
     ]
   },
 

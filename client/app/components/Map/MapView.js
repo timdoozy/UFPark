@@ -7,7 +7,7 @@ import ReactSearchBox from 'react-search-box';
 
 function MapView () {
 
-    const style = {width: '100%', height: '500px', position: 'relative'}
+    const style = {width: '100%', height: '500px'}
 
     const [defaultCoordinates, setDefaultCoordinates] = useState({center: {lat: 29.6436, lng: -82.3549}, zoom: 14});
 
@@ -139,22 +139,6 @@ function MapView () {
             lng: -82.375
         }
     ]
-
-    const [showMap, setShowMap] = useState(false);
-
-    const handleMapClick = () => setShowMap(true);
-
-    if (showMap == false)
-    {
-        return (
-            <>
-                <br />
-                <button onClick={handleMapClick}>Map</button>
-            </>
-        )
-    }
-    else if (showMap == true)
-    {
         return (
                 <div id="globalMapContainer">
                     <h2>UF Park - Map</h2>
@@ -165,21 +149,12 @@ function MapView () {
                         />
                     </div>
                     <div id="mapElement">
-                        <Map google={google} zoom={defaultCoordinates.zoom} initialCenter={defaultCoordinates.center} style={style}>
-                        </Map>
-                    </div>
-                    <div id="footerWrapper">
-                        <button id="currentLocationButton">Location</button>
-                        <button id="listViewButton" src="../Images/icons8-list-50.png">List View</button>
-                        <button id="settingsButton" src="../Images/icons8-settings-50.png">Settings</button>
+                        <Map google={google} zoom={defaultCoordinates.zoom} initialCenter={defaultCoordinates.center} style={style}/>
                     </div>
                 </div>
             )
-    }
-
-    
 }
 
 export default GoogleApiWrapper({
-    apiKey: ("Google Map")
+    apiKey: ("AIzaSyDzjKdRoiTMGMEU_W6LmzZPQEVL6GR9ejI")
 })(MapView)
