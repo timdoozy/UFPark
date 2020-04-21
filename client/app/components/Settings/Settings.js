@@ -34,7 +34,7 @@ function Settings () {
                     </div>
                     <div class="settings-body">
                         <div class="decals">
-                            <Multiselect options={decalOptions} displayValue="name" placeholder="Select Decal(s)" />
+                            <Multiselect options={decalOptions} displayValue="name" placeholder="Select Your Decal" singleSelect />
                         </div>
                         <div class="startpage">
                             <Multiselect options={viewOptions} displayValue="name" placeholder="Select Start Page" singleSelect />
