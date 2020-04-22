@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <footer>
-    <hr />
     <div id="footerWrapper">
       <div id="currentLocationButton">
         <nav>

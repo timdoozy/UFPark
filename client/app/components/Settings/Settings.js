@@ -4,8 +4,8 @@ import Switch from 'react-switch';
 
 function Settings () {
     
-    const [decalOptions, setDecalOptions] = useState([ {name: 'Red 1', id: 1}, {name: 'Red 3', id: 2}, {name: 'Park & Ride', id: 3}, {name: 'Green', id: 4}, {name: 'Brown 2', id: 5}, {name: 'Brown 3', id: 6}, {name: 'Disabled Student', id: 7}, {name: 'Motorcycle/Scooter', id: 8}]);
-    const [viewOptions, setViewOptions] = useState([{name: 'Map View', id: 9}, {name: 'List View', id: 10}]);
+    const [decalOptions, setDecalOptions] = useState([ {name: 'All Decals', id: 1, value: 'All'}, {name: 'Red 1', id: 2, value: 'Red 1'}, {name: 'Red 3', id: 3, value: 'Red 3'}, {name: 'Park & Ride', id: 4, value: 'Park & Ride'}, {name: 'Green', id: 5, value: 'Green'}, {name: 'Brown 2', id: 6, value: 'Brown 2'}, {name: 'Brown 3', id: 7, value: 'Brown 3'}, {name: 'Disabled Student', id: 8, value: 'Disabled Student'}, {name: 'Motorcycle/Scooter', id: 9, value: 'Motorcycle/Scooter'}]);
+    const [viewOptions, setViewOptions] = useState([{name: 'Map View', id: 10, value: 'Map View'}, {name: 'List View', id: 11, value: 'List View'}]);
 
     const[hideLotsCheck, setHideLotsCheck] = useState(false);
     const[darkModeCheck, setDarkModeCheck] = useState(false);
