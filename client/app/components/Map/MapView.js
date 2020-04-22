@@ -361,16 +361,6 @@ function MapView () {
             name={location.value}
             position={{lat: location.latitude, lng: location.longitude}}
             >
-                <InfoWindow
-                    visible={infoWindow}>
-                        <div className={infoWindow}>
-                            <p>
-                                Distance to Century Tower = {location.distance} <br />
-                                The availability is {location.availability} % <br />
-                                The decals that work here are {location.decals} <br />
-                            </p>
-                        </div>
-                </InfoWindow>
             </Marker>
             
         )
