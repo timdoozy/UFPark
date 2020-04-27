@@ -1,5 +1,5 @@
 # UFPark HCI Group 1
-## Timothy Hinds, Carl Lin, X, X
+## Timothy Hinds, Carl Lin, Nigel Penilla, X
 
 
 # MERN-boilerplate
